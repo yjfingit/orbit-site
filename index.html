@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orbit｜让团队专注于真正重要的工作</title>
+  <meta name="description" content="Orbit 是面向产品与研发团队的 AI 协作工具。它把任务、讨论和项目进度收进同一条轨道，自动整理上下文、标记阻塞，让团队专注于真正重要的工作。">
+  <meta name="theme-color" content="#050912">
+  <meta property="og:title" content="Orbit｜让团队专注于真正重要的工作">
+  <meta property="og:description" content="把任务、讨论和项目进度收进同一条轨道。AI 自动整理上下文、标记阻塞，让团队少花时间对齐，多花时间推进。">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23050912'/%3E%3Cg fill='none' stroke='%23b6ff3d' stroke-width='1.6'%3E%3Cellipse cx='16' cy='16' rx='11' ry='5' transform='rotate(-28 16 16)'/%3E%3C/g%3E%3Ccircle cx='16' cy='16' r='3.4' fill='%23b6ff3d'/%3E%3Ccircle cx='25.4' cy='11' r='1.4' fill='%23b6ff3d'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <div class="sky" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" data-header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Orbit 首页">
+        <svg class="brand__mark" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" fill="none">
+          <ellipse cx="16" cy="16" rx="13.5" ry="6.2" stroke="currentColor" stroke-width="1.5" transform="rotate(-28 16 16)"/>
+          <circle cx="16" cy="16" r="4" fill="currentColor"/>
+          <circle cx="27.4" cy="9.4" r="1.8" fill="currentColor"/>
+        </svg>
+        <span class="brand__word">Orbit</span>
+      </a>
+
+      <nav class="nav__links" aria-label="主导航">
+        <a href="#product" data-nav="product">产品</a>
+        <a href="#features" data-nav="features">功能</a>
+        <a href="#customers" data-nav="customers">客户</a>
+        <a href="#pricing" data-nav="pricing">价格</a>
+        <a href="#faq" data-nav="faq">常见问题</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="btn btn--primary btn--sm" type="button" data-demo-open>预约演示</button>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="打开菜单" data-nav-toggle>
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav__mobile" id="mobile-menu" hidden data-mobile-menu>
+      <nav class="container nav__mobile-inner" aria-label="移动端导航">
+        <a href="#product">产品</a>
+        <a href="#features">功能</a>
+        <a href="#customers">客户</a>
+        <a href="#pricing">价格</a>
+        <a href="#faq">常见问题</a>
+        <button class="btn btn--primary nav__mobile-cta" type="button" data-demo-open>预约产品演示</button>
+      </nav>
+    </div>
+    <div class="nav__scrim" data-nav-scrim hidden></div>
+  </header>
+
+  <main id="main">
+    <span id="top" aria-hidden="true"></span>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero__inner">
+          <p class="eyebrow hero__eyebrow" data-reveal><span class="eyebrow__dot" aria-hidden="true"></span>AI 团队协作 · Orbit 2.0 已上线</p>
+          <h1 id="hero-title" data-reveal style="--reveal-delay:60ms">让团队专注于<br><span class="accent">真正重要的工作</span></h1>
+          <p class="hero__lede" data-reveal style="--reveal-delay:120ms">Orbit 把任务、讨论和项目进度收进同一条轨道。AI 会自动整理上下文、标记阻塞，并跟进那些容易掉在地上的事——团队只需要专注于推进。</p>
+          <div class="hero__actions" data-reveal style="--reveal-delay:180ms">
+            <button class="btn btn--primary" type="button" data-demo-open>预约产品演示</button>
+            <a class="btn btn--ghost" href="#product">
+              查看产品界面
+              <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" fill="none"><path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <p class="hero__meta" data-reveal style="--reveal-delay:240ms">
+            <span>20 分钟演示</span><span aria-hidden="true">·</span>
+            <span>14 天免费试用</span><span aria-hidden="true">·</span>
+            <span>无需信用卡</span>
+          </p>
+        </div>
+
+        <div class="preview-stage" id="product" data-reveal style="--reveal-delay:280ms">
+          <div class="orbit-ring" aria-hidden="true">
+            <svg viewBox="0 0 1400 720" fill="none">
+              <ellipse cx="700" cy="360" rx="640" ry="268" stroke="rgba(182,255,61,.13)" stroke-width="1" transform="rotate(-6 700 360)"/>
+              <ellipse cx="700" cy="360" rx="500" ry="204" stroke="rgba(255,255,255,.055)" stroke-width="1" transform="rotate(-6 700 360)"/>
+              <circle class="orbit-ring__pulse" cx="1124" cy="142" r="12" fill="#b6ff3d" opacity=".14"/>
+              <circle cx="1124" cy="142" r="3.4" fill="#b6ff3d"/>
+            </svg>
+          </div>
+
+          <h2 class="sr-only">Orbit 产品界面预览</h2>
+          <div class="preview" data-preview>
+            <div class="preview__inner">
+              <div class="app">
+                <div class="app__chrome">
+                  <span class="app__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                  <span class="app__url">orbit.app / 阿特拉斯 / 发布计划</span>
+                  <span class="app__sync">已同步</span>
+                </div>
+
+                <div class="app__body">
+                  <aside class="app__rail" aria-label="工作区导航预览">
+                    <div class="workspace">
+                      <span class="workspace__logo" aria-hidden="true">阿</span>
+                      <span class="workspace__text"><strong>阿特拉斯团队</strong><small>产品与研发</small></span>
+                    </div>
+
+                    <div class="rail-nav" aria-hidden="true">
+                      <span class="rail-item is-active">今天<em>7</em></span>
+                      <span class="rail-item">收件箱<em>3</em></span>
+                      <span class="rail-item">项目</span>
+                      <span class="rail-item">路线图</span>
+                      <span class="rail-item">团队</span>
+                    </div>
+
+                    <p class="rail-label">正在推进</p>
+                    <div class="rail-projects" aria-hidden="true">
+                      <span class="rail-project"><i class="dot dot--lime"></i>阿特拉斯 2.4<small>60%</small></span>
+                      <span class="rail-project"><i class="dot dot--blue"></i>客户回访计划<small>24%</small></span>
+                    </div>
+
+                    <div class="rail-ai">
+                      <span class="rail-ai__head"><i class="dot dot--lime"></i>Orbit AI</span>
+                      <p>已整理今早站会，生成 4 条任务并标注了责任人。</p>
+                    </div>
+                  </aside>
+
+                  <div class="app__main">
+                    <div class="app__topline">
+                      <div class="app__titles">
+                        <p class="app__crumb">项目 / 阿特拉斯 2.4</p>
+                        <p class="app__title">发布准备与协作时间线</p>
+                      </div>
+                      <div class="avatars" aria-label="项目成员：林澈、周予、陈屿等 6 人">
+                        <span class="avatar avatar--a">林</span>
+                        <span class="avatar avatar--b">周</span>
+                        <span class="avatar avatar--c">陈</span>
+                        <span class="avatar avatar--more">+3</span>
+                      </div>
+                    </div>
+
+                    <div class="app__stats">
+                      <div class="stat">
+                        <span class="stat__label">已完成</span>
+                        <span class="stat__value"><span data-done-count>3</span><em>/ <span data-total-count>5</span></em></span>
+                      </div>
+                      <div class="stat">
+                        <span class="stat__label">进行中</span>
+                        <span class="stat__value" data-active-count>1</span>
+                      </div>
+                      <div class="stat">
+                        <span class="stat__label">阻塞</span>
+                        <span class="stat__value stat__value--lime" data-blocked-count>1</span>
+                      </div>
+                    </div>
+
+                    <div class="app__mobile-progress">
+                      <span>项目进度 <strong data-progress-value>60%</strong></span>
+                      <span class="meter"><span class="meter__fill" style="width:60%" data-progress-bar></span></span>
+                    </div>
+
+                    <div class="tasklist">
+                      <div class="tasklist__head">
+                        <span>本周任务</span>
+                        <span class="tasklist__hint">点击勾选，进度会同步更新</span>
+                      </div>
+                      <ul class="tasklist__items">
+                        <li>
+                          <label class="task is-done">
+                            <input class="task__input" type="checkbox" checked>
+                            <span class="task__box" aria-hidden="true"></span>
+                            <span class="task__body">
+                              <span class="task__title">确认 2.4 发布检查清单</span>
+                              <span class="task__meta"><span class="tag tag--ai">AI 生成</span><span>林澈</span><span class="task__due">今天</span></span>
+                            </span>
+                            <span class="task__avatar avatar--a" aria-hidden="true">林</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="task is-done">
+                            <input class="task__input" type="checkbox" checked>
+                            <span class="task__box" aria-hidden="true"></span>
+                            <span class="task__body">
+                              <span class="task__title">校对协作时间线文案</span>
+                              <span class="task__meta"><span>周予</span><span class="task__due">今天</span></span>
+                            </span>
+                            <span class="task__avatar avatar--b" aria-hidden="true">周</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="task is-done">
+                            <input class="task__input" type="checkbox" checked>
+                            <span class="task__box" aria-hidden="true"></span>
+                            <span class="task__body">
+                              <span class="task__title">补齐权限迁移的回归用例</span>
+                              <span class="task__meta"><span>陈屿</span><span class="task__due">昨天</span></span>
+                            </span>
+                            <span class="task__avatar avatar--c" aria-hidden="true">陈</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="task">
+                            <input class="task__input" type="checkbox" data-blocked="true">
+                            <span class="task__box" aria-hidden="true"></span>
+                            <span class="task__body">
+                              <span class="task__title">完成移动端空状态设计</span>
+                              <span class="task__meta"><span class="tag tag--block">阻塞</span><span>苏黎</span><span class="task__due">明天</span></span>
+                            </span>
+                            <span class="task__avatar avatar--d" aria-hidden="true">苏</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="task">
+                            <input class="task__input" type="checkbox">
+                            <span class="task__box" aria-hidden="true"></span>
+                            <span class="task__body">
+                              <span class="task__title">整理发布说明与客户公告</span>
+                              <span class="task__meta"><span class="tag tag--ai">AI 生成</span><span>林澈</span><span class="task__due">周四</span></span>
+                            </span>
+                            <span class="task__avatar avatar--a" aria-hidden="true">林</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <aside class="app__side" aria-label="项目进度预览">
+                    <p class="side-label">项目进度</p>
+                    <div class="ring">
+                      <svg viewBox="0 0 132 132" aria-hidden="true">
+                        <circle class="ring__track" cx="66" cy="66" r="56" pathLength="100"/>
+                        <circle class="ring__value" cx="66" cy="66" r="56" pathLength="100" stroke-dasharray="100" stroke-dashoffset="40" data-progress-ring/>
+                      </svg>
+                      <span class="ring__label"><strong data-progress-value>60%</strong><small>整体完成</small></span>
+                    </div>
+
+                    <p class="side-label side-label--spaced">关键节点</p>
+                    <ul class="milestones">
+                      <li class="milestone is-done"><span>设计定稿</span><small>10 月 12 日</small></li>
+                      <li class="milestone is-done"><span>内测版本</span><small>10 月 16 日</small></li>
+                      <li class="milestone is-current"><span>公开发布</span><small>10 月 24 日</small></li>
+                      <li class="milestone"><span>客户回访</span><small>11 月 02 日</small></li>
+                    </ul>
+
+                    <div class="side-note">
+                      <span class="side-note__label">AI 风险提示</span>
+                      <p>移动端设计阻塞了发布说明的排版，建议今天内确认负责人。</p>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="preview__note" aria-hidden="true"><span class="preview__dot"></span>界面预览 · 勾选任务可查看进度联动</p>
+          <p class="sr-only" aria-live="polite" data-progress-status></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--ruled" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head">
+          <div data-reveal>
+            <p class="eyebrow eyebrow--line">核心功能</p>
+            <h2 id="features-title">让协作回到<br>事情本身</h2>
+          </div>
+          <p class="section-head__lede" data-reveal style="--reveal-delay:80ms">不增加流程，也不制造更多通知。Orbit 把零散的信息收拢成清晰的动作，让团队少花时间对齐，多花时间推进。</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card" data-reveal>
+            <span class="feature-card__index">01</span>
+            <h3>从对话到下一步</h3>
+            <p>会议、评论和客户反馈自动归拢，生成带负责人与截止时间的任务。你只需要确认，而不是整理。</p>
+            <div class="feature-visual feature-visual--flow" aria-hidden="true">
+              <span class="flow-chip">站会记录</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-chip">4 项决定</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-chip flow-chip--lime">3 个任务</span>
+            </div>
+          </article>
+
+          <article class="feature-card" data-reveal style="--reveal-delay:80ms">
+            <span class="feature-card__index">02</span>
+            <h3>进度随工作流动</h3>
+            <p>任务、里程碑和风险汇入同一条进度轨道。阻塞在变成延期之前，就被看见。</p>
+            <div class="feature-visual feature-visual--chart" aria-hidden="true">
+              <div class="mini-bars">
+                <i style="--h:34%"></i><i style="--h:52%"></i><i style="--h:40%"></i><i style="--h:66%"></i><i style="--h:58%"></i><i style="--h:82%"></i><i class="is-current" style="--h:100%"></i>
+              </div>
+              <p class="mini-caption">近 7 天完成量 <strong>+18%</strong></p>
+            </div>
+          </article>
+
+          <article class="feature-card" data-reveal style="--reveal-delay:160ms">
+            <span class="feature-card__index">03</span>
+            <h3>提醒恰到好处</h3>
+            <p>Orbit 只在真正需要时出现：一次温和的提醒，附上完整上下文，而不是每天催促。</p>
+            <div class="feature-visual feature-visual--nudge" aria-hidden="true">
+              <div class="nudge">
+                <span class="nudge__dot"></span>
+                <p><strong>「移动端空状态」已停滞 2 天</strong><span>已提醒负责人苏黎 · 附上相关讨论</span></p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--ruled" id="customers" aria-labelledby="customers-title">
+      <div class="container">
+        <div class="section-head">
+          <div data-reveal>
+            <p class="eyebrow eyebrow--line">客户评价</p>
+            <h2 id="customers-title">团队说，<br>改变的是节奏</h2>
+          </div>
+          <p class="section-head__lede" data-reveal style="--reveal-delay:80ms">来自产品、研发和运营团队的日常使用反馈。他们没有换掉原有流程，只是不再把时间花在追赶进度上。</p>
+        </div>
+
+        <div class="quotes" data-reveal>
+          <figure class="quote">
+            <blockquote>
+              <p>“以前周一要花两个小时对齐进度，现在站会摘要会自己出现。我们只是确认一下，然后继续做事。”</p>
+            </blockquote>
+            <figcaption>
+              <span class="quote__avatar avatar--a" aria-hidden="true">沈</span>
+              <span class="quote__who"><strong>沈知远</strong><span>产品负责人 · 云杉科技</span></span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote>
+              <p>“AI 把散落在聊天里的决定整理成任务，责任人和时间都写清楚了。因为信息不同步导致的返工，少了大约三分之一。”</p>
+            </blockquote>
+            <figcaption>
+              <span class="quote__avatar avatar--c" aria-hidden="true">唐</span>
+              <span class="quote__who"><strong>唐宁</strong><span>研发经理 · 北辰数据</span></span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote>
+              <p>“最喜欢的是它不催人。只在任务真的卡住时提醒，团队反而更愿意主动同步。”</p>
+            </blockquote>
+            <figcaption>
+              <span class="quote__avatar avatar--b" aria-hidden="true">顾</span>
+              <span class="quote__who"><strong>顾言</strong><span>运营负责人 · 拾光设计</span></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--ruled" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-head section-head--pricing">
+          <div data-reveal>
+            <p class="eyebrow eyebrow--line">价格方案</p>
+            <h2 id="pricing-title">简单透明的价格</h2>
+          </div>
+          <p class="section-head__lede" data-reveal style="--reveal-delay:80ms">从 5 人小队到跨部门组织，按团队规模选择。所有方案都包含完整的任务、项目与协作能力。</p>
+        </div>
+
+        <div class="billing" role="group" aria-label="计费周期" data-billing-root data-billing="monthly" data-reveal style="--reveal-delay:100ms">
+          <span class="billing__thumb" aria-hidden="true"></span>
+          <button class="billing__btn is-active" type="button" data-billing-btn="monthly" aria-pressed="true">按月付费</button>
+          <button class="billing__btn" type="button" data-billing-btn="annual" aria-pressed="false">按年付费<span class="billing__badge">省 20%</span></button>
+        </div>
+        <p class="billing__note" aria-live="polite" data-billing-note>按月付费，随时可以取消。</p>
+
+        <div class="pricing-grid">
+          <article class="plan" data-reveal>
+            <div class="plan__head">
+              <h3>起步</h3>
+              <p>适合刚开始建立协作习惯的小团队。</p>
+            </div>
+            <div class="plan__price">
+              <span class="price__currency">¥</span><span class="price__value" data-price data-monthly="0" data-annual="0">0</span>
+              <span class="price__suffix" data-suffix data-monthly="永久可用" data-annual="永久可用">永久可用</span>
+            </div>
+            <p class="plan__note" data-price-note data-monthly="无需信用卡，注册即可使用。" data-annual="无需信用卡，注册即可使用。">无需信用卡，注册即可使用。</p>
+            <button class="btn btn--ghost btn--block" type="button" data-demo-open data-plan="起步版">免费开始</button>
+            <ul class="plan__list">
+              <li>最多 5 名成员</li>
+              <li>10 个进行中项目</li>
+              <li>基础任务与里程碑</li>
+              <li>每周一次 AI 摘要</li>
+            </ul>
+          </article>
+
+          <article class="plan plan--featured" data-reveal style="--reveal-delay:80ms">
+            <span class="plan__badge">最受欢迎</span>
+            <div class="plan__head">
+              <h3>团队</h3>
+              <p>为需要稳定节奏的产品与研发团队设计。</p>
+            </div>
+            <div class="plan__price">
+              <span class="price__currency">¥</span><span class="price__value" data-price data-monthly="68" data-annual="54">68</span>
+              <span class="price__suffix" data-suffix data-monthly="/人/月" data-annual="/人/月">/人/月</span>
+            </div>
+            <p class="plan__note" data-price-note data-monthly="按月计费，随时取消。" data-annual="按年结算 ¥648 / 人，节省 ¥168。">按月计费，随时取消。</p>
+            <button class="btn btn--primary btn--block" type="button" data-demo-open data-plan="团队版">开始 14 天试用</button>
+            <ul class="plan__list">
+              <li>不限成员与项目</li>
+              <li>无限次 AI 会议摘要</li>
+              <li>阻塞识别与自动提醒</li>
+              <li>访客协作与细粒度权限</li>
+              <li>优先邮件与在线支持</li>
+            </ul>
+          </article>
+
+          <article class="plan" data-reveal style="--reveal-delay:160ms">
+            <div class="plan__head">
+              <h3>企业</h3>
+              <p>面向多团队协作与严格合规要求的组织。</p>
+            </div>
+            <div class="plan__price">
+              <span class="price__value price__value--text">定制</span>
+              <span class="price__suffix" data-suffix data-monthly="按需报价" data-annual="按需报价">按需报价</span>
+            </div>
+            <p class="plan__note" data-price-note data-monthly="含安全评审与专属支持。" data-annual="含安全评审与专属支持。">含安全评审与专属支持。</p>
+            <button class="btn btn--ghost btn--block" type="button" data-demo-open data-plan="企业版">联系销售</button>
+            <ul class="plan__list">
+              <li>单点登录与目录同步</li>
+              <li>私有化部署选项</li>
+              <li>专属客户成功经理</li>
+              <li>安全评审与数据处理协议</li>
+              <li>99.9% 可用性承诺</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="pricing-foot" data-reveal>价格以人民币计价，不含税。年付方案按年一次性结算。所有付费方案均可在 30 天内申请退款。</p>
+      </div>
+    </section>
+
+    <section class="section section--ruled" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="faq-layout">
+          <div class="faq-intro" data-reveal>
+            <p class="eyebrow eyebrow--line">常见问题</p>
+            <h2 id="faq-title">在演示之前，<br>你可能想知道</h2>
+            <p class="faq-intro__lede">关于 AI 权限、数据与迁移的常见问题。如果这里没有答案，可以直接在演示中问我们。</p>
+            <button class="link-btn" type="button" data-demo-open>预约一次沟通
+              <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+
+          <div class="faq-list" data-reveal style="--reveal-delay:80ms">
+            <div class="faq-item">
+              <h3 class="faq-item__q"><button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-1">Orbit 和普通的项目管理工具有什么不同？<span class="faq-icon" aria-hidden="true"><i></i><i></i></span></button></h3>
+              <div class="faq-panel" id="faq-panel-1" role="region" aria-hidden="true">
+                <div class="faq-panel__inner"><p>传统工具记录任务，Orbit 更关心任务能不能被推进。它把会议、文档和讨论整理成明确的下一步，并在工作停滞时提醒合适的人，而不是把更多表单交给你填。</p></div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-item__q"><button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-2">AI 会读取我们的全部聊天记录吗？<span class="faq-icon" aria-hidden="true"><i></i><i></i></span></button></h3>
+              <div class="faq-panel" id="faq-panel-2" role="region" aria-hidden="true">
+                <div class="faq-panel__inner"><p>不会。只有你明确授权的项目空间才会被分析，管理员可以按团队设置数据范围。每条摘要都会标注来源，任何成员都能查看引用并一键撤回。</p></div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-item__q"><button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-3">数据存储在哪里？支持私有化部署吗？<span class="faq-icon" aria-hidden="true"><i></i><i></i></span></button></h3>
+              <div class="faq-panel" id="faq-panel-3" role="region" aria-hidden="true">
+                <div class="faq-panel__inner"><p>默认存储于中国大陆的合规云区域，传输与静态数据均加密，管理员可随时导出全部内容。企业版支持私有化部署，并提供完整的安全评估材料。</p></div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-item__q"><button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-4">可以只给部分团队购买吗？<span class="faq-icon" aria-hidden="true"><i></i><i></i></span></button></h3>
+              <div class="faq-panel" id="faq-panel-4" role="region" aria-hidden="true">
+                <div class="faq-panel__inner"><p>可以。Orbit 按工作区计费，你可以先让一个团队试用，再逐步扩展到全公司。后续新增席位会按剩余周期折算，不需要重新签约。</p></div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-item__q"><button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-5">从现有工具迁移需要多久？<span class="faq-icon" aria-hidden="true"><i></i><i></i></span></button></h3>
+              <div class="faq-panel" id="faq-panel-5" role="region" aria-hidden="true">
+                <div class="faq-panel__inner"><p>我们支持从飞书项目、Jira、Trello 导入任务、成员与评论，一般 10 人团队一个下午即可完成。迁移期间原工具可以继续使用，确认无误后再切换。</p></div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-item__q"><button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-panel-6">演示需要提前准备什么？<span class="faq-icon" aria-hidden="true"><i></i><i></i></span></button></h3>
+              <div class="faq-panel" id="faq-panel-6" role="region" aria-hidden="true">
+                <div class="faq-panel__inner"><p>带上一个你最想解决的协作场景就够了。20 分钟的演示会围绕你的流程展开，不需要提前安装，也不用拉上整个团队。</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="#top" aria-label="Orbit 首页">
+            <svg class="brand__mark" viewBox="0 0 32 32" width="26" height="26" aria-hidden="true" fill="none">
+              <ellipse cx="16" cy="16" rx="13.5" ry="6.2" stroke="currentColor" stroke-width="1.5" transform="rotate(-28 16 16)"/>
+              <circle cx="16" cy="16" r="4" fill="currentColor"/>
+              <circle cx="27.4" cy="9.4" r="1.8" fill="currentColor"/>
+            </svg>
+            <span class="brand__word">Orbit</span>
+          </a>
+          <p>沿着同一条轨道，<br>把重要的事做完。</p>
+        </div>
+
+        <nav class="footer-col" aria-label="页脚产品导航">
+          <span class="footer-col__label">产品</span>
+          <a href="#product">界面预览</a>
+          <a href="#features">核心功能</a>
+          <a href="#pricing">价格方案</a>
+          <a href="#faq">常见问题</a>
+        </nav>
+
+        <div class="footer-col">
+          <span class="footer-col__label">了解</span>
+          <a href="#customers">客户评价</a>
+          <button class="footer-link" type="button" data-demo-open>预约演示</button>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col__label">联系我们</span>
+          <a href="mailto:hello@orbit.app">hello@orbit.app</a>
+          <span>工作日 10:00–19:00</span>
+          <span>上海 · 中国</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Orbit. 本页面为产品概念演示，示例数据仅用于展示界面。</p>
+        <p class="footer-bottom__meta">Made for teams in orbit.</p>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="demo" id="demo-dialog" aria-labelledby="demo-title">
+    <div class="demo__panel">
+      <button class="demo__close" type="button" aria-label="关闭预约表单" data-demo-close>
+        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="none"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+
+      <div data-demo-form-view>
+        <p class="eyebrow">预约演示</p>
+        <h2 id="demo-title">用 20 分钟，看看 Orbit 如何贴合你的团队</h2>
+        <p class="demo__lede">留下联系方式，我们会围绕你最关心的工作流安排一次演示。</p>
+        <p class="demo__plan" data-demo-plan hidden></p>
+
+        <form class="demo-form" id="demo-form" novalidate>
+          <div class="field">
+            <label for="demo-name">姓名</label>
+            <input id="demo-name" name="name" type="text" autocomplete="name" placeholder="例如：林澈" required aria-describedby="err-name">
+            <p class="field__error" id="err-name" data-error-for="name" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label for="demo-company">公司或团队</label>
+            <input id="demo-company" name="company" type="text" autocomplete="organization" placeholder="例如：阿特拉斯" required aria-describedby="err-company">
+            <p class="field__error" id="err-company" data-error-for="company" aria-live="polite"></p>
+          </div>
+
+          <div class="field field--full">
+            <label for="demo-email">工作邮箱</label>
+            <input id="demo-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="name@company.com" required aria-describedby="err-email">
+            <p class="field__error" id="err-email" data-error-for="email" aria-live="polite"></p>
+          </div>
+
+          <div class="field field--full">
+            <label for="demo-size">团队规模</label>
+            <div class="select-wrap">
+              <select id="demo-size" name="size" required aria-describedby="err-size">
+                <option value="">请选择团队规模</option>
+                <option value="1–10 人">1–10 人</option>
+                <option value="11–50 人">11–50 人</option>
+                <option value="51–200 人">51–200 人</option>
+                <option value="200 人以上">200 人以上</option>
+              </select>
+              <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <p class="field__error" id="err-size" data-error-for="size" aria-live="polite"></p>
+          </div>
+
+          <div class="field field--full">
+            <label for="demo-note">想先解决什么？<span class="field__hint">选填</span></label>
+            <textarea id="demo-note" name="note" rows="3" maxlength="200" placeholder="例如：每周站会结束后，任务总是没人跟进。"></textarea>
+            <p class="field__count" aria-hidden="true"><span data-note-count>0</span>/200</p>
+          </div>
+
+          <button class="btn btn--primary demo__submit" type="submit" data-demo-submit>
+            <span class="btn__label">确认预约</span>
+            <span class="btn__spinner" aria-hidden="true"></span>
+          </button>
+          <p class="demo__fineprint">此页面为产品演示，预约信息只保存在当前页面，不会发送邮件或创建真实日程。</p>
+        </form>
+      </div>
+
+      <div class="demo__success" data-demo-success hidden tabindex="-1">
+        <span class="success-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <p class="eyebrow">演示预约已提交</p>
+        <h2>信息已记录，下面是本次提交的结果</h2>
+        <p class="demo__lede">当前为演示模式：信息仅保存在本页，不会通知销售团队。正式上线后，你会在这里看到确认邮件与日程建议。</p>
+        <dl class="demo-summary">
+          <div><dt>姓名</dt><dd data-summary="name"></dd></div>
+          <div><dt>工作邮箱</dt><dd data-summary="email"></dd></div>
+          <div><dt>公司或团队</dt><dd data-summary="company"></dd></div>
+          <div><dt>团队规模</dt><dd data-summary="size"></dd></div>
+          <div><dt>关注方向</dt><dd data-summary="plan"></dd></div>
+          <div><dt>补充说明</dt><dd data-summary="note"></dd></div>
+          <div><dt>演示编号</dt><dd data-summary="ref"></dd></div>
+        </dl>
+        <div class="demo__success-actions">
+          <button class="btn btn--primary" type="button" data-demo-close>完成</button>
+          <button class="btn btn--ghost" type="button" data-demo-reset>再填写一次</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
